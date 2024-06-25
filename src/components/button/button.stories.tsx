@@ -12,9 +12,11 @@ const meta: Meta = {
     },
     size: {
       control: 'select',
+      options: ['small', 'medium', 'large'],
     },
     variant: {
       control: 'select',
+      options: ['primary', 'secondary', 'destructive'],
     },
   },
   component: Button,
@@ -42,5 +44,13 @@ export const Destructive: Story = {
   args: {
     children: 'Destructive',
     variant: 'destructive',
+  },
+};
+
+export const Dark: Story = {
+  parameters: {
+    themes: {
+      themeOverride: 'dark',
+    },
   },
 };
