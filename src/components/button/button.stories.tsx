@@ -7,6 +7,14 @@ const meta: Meta = {
     disabled: false,
   },
   argTypes: {
+    children: {
+      name: 'Label',
+      control: 'text',
+      description: 'Label of the button',
+      table: {
+        disable: true,
+      },
+    },
     disabled: {
       control: 'boolean',
     },
@@ -20,7 +28,7 @@ const meta: Meta = {
     },
   },
   component: Button,
-  title: 'Button',
+  title: 'Components/Button',
 };
 
 export default meta;

@@ -52,7 +52,7 @@ export const variants = cva(
       },
     },
     defaultVariants: {
-      variant: 'secondary',
+      variant: 'primary',
       size: 'medium',
     },
   },
